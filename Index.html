@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <style>
+      div {
+        width: 500px;
+        height: 500px;
+        display: inline-block;
+      }
+      #div1 {
+        margin-right: 100px;
+        margin-top: 15px;
+        margin-left: 15px;
+      }
+      #div2 {
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <fieldset id="field1">
+        <picture>
+          <img
+            src="Foto.jpeg"
+            alt="Muka Gw"
+            style="width: 127px; height: 202px"
+          />
+        </picture>
+        <pre>Nama          : Jessen Fernanda Liang</pre>
+        <pre>NIM           : A12.2023.06987</pre>
+        <pre>Jurusan       : S1 Sistem Informasi</pre>
+        <pre>Fakultas      : Fakultas Ilmu Komputer</pre>
+        <pre>Angkatan      : 2023</pre>
+        <pre>Jenis Kelamin : Laki-laki</pre>
+        <pre>Email         : jessenliang22@gmail.com</pre>
+        <button>Halaman Form</button>
+      </fieldset>
+    </div>
+    <div id="div2">
+      <fieldset id="field2">
+        <h1>Formulir Biodata</h1>
+        <form>
+          Nama: <input type="text" id="nama" name="nama" /> <br /><br />
+          NIM: <input type="number" id="nim" name="nim" /> <br /><br />
+          Jurusan: <input type="text" id="jurusan" name="jurusan" />
+          <br /><br />
+          Fakultas: <label for="fakultas">Choose Fakultas:</label>
+          <select id="fakultas" name="fakultas">
+            <option value="Ilkom">Fakultas Ilkom</option>
+            <option value="Medkit">Fakultas Medkit</option>
+            <option value="Orang">Fakultas Teknik</option>
+            <option value="Albert">Fakultas Ilmu Komputer</option>
+          </select>
+          <br /><br />
+          Angkatan: <input type="text" id="angkatan" name="angkatan" />
+          <br /><br />
+          Gender:
+          <form>
+            <input type="radio" id="Pria" name="gender" value="Pria" />
+            <label for="Pria">Pria</label>
+            <input type="radio" id="Wanita" name="gender" value="Wanita" />
+            <label for="Wanita">Wanita</label><br />
+          </form>
+          Email: <input type="text" id="rate" name="rate" required />
+          <br /><br />
+          <input type="submit" value="Submit" />
+          <input type="submit" value="Reset" />
+          <input type="submit" value="Biodata" />
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>
